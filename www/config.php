@@ -10,10 +10,10 @@ if (!defined('_MYCDN_')) {
 }
 
 // origin hostname
-$original_host = 'https://blog.lael.be';
+$original_host = 'https://anboo.modneycare.com';
 
 // mycdn agentname
-$mycdn_agentname = 'MYCDN/1.0';
+$mycdn_agentname = 'MODENYCARE_CDN/1.0';
 
 // allowed extensions. please write in lowercase.
 $allowed_extension = [];
@@ -23,6 +23,7 @@ $allowed_extension[] = 'jpeg';
 $allowed_extension[] = 'gif';
 $allowed_extension[] = 'css';
 $allowed_extension[] = 'js';
+$allowed_extension[] = 'mp4';
 
 // lowercase headername + colon(:) + custom value
 // SEE : https://developer.mozilla.org/ko/docs/Web/HTTP/Headers
