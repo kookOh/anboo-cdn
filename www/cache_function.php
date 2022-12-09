@@ -49,16 +49,15 @@ function save_and_display_file($target_host, $target_path)
 
     if ($result && $httpcode == 200) {
         $local_fullpath = "{$current_path}{$local_path}/{$local_filename}";
-
-        // create folder if not exist
+	// create folder if not exist
         if (!file_exists($current_path . $local_path)) {
-            exec("mkdir -p {$current_path}{$local_path}");
+		exec("mkdir -p {$current_path}{$local_path}");
         }
         file_put_contents($local_fullpath, $result);
         $content_type = mime_content_type($local_fullpath);
         $content_length = filesize($local_fullpath);
 
-        // display
+	// display
         header('my-cache-status: MISS');
         header("content-type: {$content_type}");
         header("content-length: {$content_length}");

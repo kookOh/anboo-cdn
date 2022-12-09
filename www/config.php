@@ -10,7 +10,7 @@ if (!defined('_MYCDN_')) {
 }
 
 // origin hostname
-$original_host = 'https://anboo.modneycare.com';
+$original_host = 'https://devapi.modneycare.com';
 
 // mycdn agentname
 $mycdn_agentname = 'MODENYCARE_CDN/1.0';
